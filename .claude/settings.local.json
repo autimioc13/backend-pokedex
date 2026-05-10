@@ -2,7 +2,18 @@
   "permissions": {
     "allow": [
       "Bash(npm install *)",
-      "PowerShell(Start-Process \"C:\\\\Program Files\\\\Docker\\\\Docker\\\\Docker Desktop.exe\" -ErrorAction SilentlyContinue)"
+      "PowerShell(Start-Process \"C:\\\\Program Files\\\\Docker\\\\Docker\\\\Docker Desktop.exe\" -ErrorAction SilentlyContinue)",
+      "Bash(git config *)",
+      "Bash(gh --version)",
+      "PowerShell(gh --version 2>&1)",
+      "PowerShell(git config user.name 2>&1)",
+      "PowerShell(git config user.email 2>&1)",
+      "PowerShell(git config --global user.email \"autimioc13@gmail.com\")",
+      "PowerShell(git config --global user.name \"autimioc13\")",
+      "PowerShell(git config user.name)",
+      "PowerShell(git config user.email)",
+      "PowerShell(git config --global user.email \"alexandergarciaclei5b@gmail.com\")",
+      "PowerShell(git config --global user.name \"alexgarpul\")"
     ]
   }
 }
