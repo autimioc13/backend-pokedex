@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "monorepo": true,
+  "root": "apps/api",
+  "sourceRoot": "apps/api/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "tsConfigPath": "apps/api/tsconfig.app.json"
+  },
+  "projects": {
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
+    },
+    "database": {
+      "type": "library",
+      "root": "libs/database",
+      "entryFile": "index",
+      "sourceRoot": "libs/database/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/database/tsconfig.lib.json"
+      }
+    },
+    "pokemon": {
+      "type": "library",
+      "root": "libs/pokemon",
+      "entryFile": "index",
+      "sourceRoot": "libs/pokemon/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/pokemon/tsconfig.lib.json"
+      }
+    },
+    "type": {
+      "type": "library",
+      "root": "libs/type",
+      "entryFile": "index",
+      "sourceRoot": "libs/type/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/type/tsconfig.lib.json"
+      }
+    },
+    "ability": {
+      "type": "library",
+      "root": "libs/ability",
+      "entryFile": "index",
+      "sourceRoot": "libs/ability/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/ability/tsconfig.lib.json"
+      }
+    }
+  }
+}
