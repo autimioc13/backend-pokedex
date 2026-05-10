@@ -13,7 +13,8 @@
       "PowerShell(git config user.name)",
       "PowerShell(git config user.email)",
       "PowerShell(git config --global user.email \"alexandergarciaclei5b@gmail.com\")",
-      "PowerShell(git config --global user.name \"alexgarpul\")"
+      "PowerShell(git config --global user.name \"alexgarpul\")",
+      "PowerShell(docker --version 2>&1)"
     ]
   }
 }
